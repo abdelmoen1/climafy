@@ -8,7 +8,7 @@ A dynamic weather application that provides real-time current conditions, daily 
 
 ## 🚀 Live Preview
 
-(ضع هنا رابط GitHub Pages أو Netlify لاحقًا)
+[Open Live Demo](https://climafy-app.netlify.app/)
 
 ---
 
