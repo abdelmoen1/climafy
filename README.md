@@ -38,15 +38,15 @@ The entire UI is dynamically rendered using JavaScript.
 
 This project focuses on:
 
-#### 1️⃣ Dynamic DOM Construction
+### 1️⃣ Dynamic DOM Construction
 
 All UI components (main container, forecast grid, hourly list) are built using createElement() — no static HTML templating.
 
-#### 2️⃣ Controlled Fetch State
+### 2️⃣ Controlled Fetch State
 
 A concurrency guard (isFetching) prevents duplicate API requests.
 
-#### 3️⃣ Separation of Concerns
+### 3️⃣ Separation of Concerns
 
 - Fetch logic isolated
 
@@ -56,7 +56,7 @@ A concurrency guard (isFetching) prevents duplicate API requests.
 
 - UI helpers abstracted
 
-#### 4️⃣ Defensive Error Handling
+### 4️⃣ Defensive Error Handling
 
 Handles:
 
@@ -86,7 +86,7 @@ No frameworks. No libraries. Pure JS.
 
 ## ⚙️ Features
 
-#### 🌡 Current Weather
+### 🌡 Current Weather
 
 - Temperature
 
@@ -98,7 +98,7 @@ No frameworks. No libraries. Pure JS.
 
 - Precipitation
 
-#### 📅 7-Day Forecast
+### 📅 7-Day Forecast
 
 - Daily min/max temperatures
 
@@ -106,7 +106,7 @@ No frameworks. No libraries. Pure JS.
 
 - Dynamic date handling
 
-#### ⏱ Hourly Forecast
+### ⏱ Hourly Forecast
 
 - Hour-by-hour temperature
 
@@ -114,7 +114,7 @@ No frameworks. No libraries. Pure JS.
 
 - Clean horizontal UI
 
-#### 🔁 Unit Conversion System
+### 🔁 Unit Conversion System
 
 Supports:
 
@@ -178,20 +178,17 @@ All conversions update dynamically without refetching data.
 
 ## 📸 Screenshots
 
-## 📸 Screenshots
-
 ### Default Search View
 ![Weather App Main](./images/screenshots/default-view.png)
 
 ### Unit Conversion Dropdown
 ![Weather App Units Dropdown](./images/screenshots/dropdown-units.png)
 
-### Mobile View
-![Climafy App on Mobile](./images/screenshots/mobile-view.png)
-
 ### Loading Page
 ![Loading Skeleton](./images/screenshots/loading-page.png)
 
+### Mobile View
+![Climafy App on Mobile](./images/screenshots/mobile-view.png)
 ---
 
 ## 🧪 Future Improvements
