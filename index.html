@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic Meta Setup -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Title -->
+    <title>Climafy</title>
+
+    <!-- Normalize CSS (Cross-Browser Consistency) -->
+    <link rel="stylesheet" href="CSS/normalize.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="CSS/all.min.css">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- Google Fonts (Merged to avoid repetition) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Bricolage+Grotesque&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="container">
+
+        <!-- Logo -->
+        <div class="logo">
+            <!-- Added descriptive alt text -->
+            <a href="#" aria-label="Go to homepage">
+                <img src="images/favicon.png" alt="Climafy">
+                Climafy
+            </a>
+        </div>
+
+        <!-- Units Navigation -->
+        <nav aria-label="Units Settings">
+
+            <!-- Changed from div to button for accessibility -->
+            <button class="main-title" aria-expanded="false" aria-controls="units-menu">
+                <i class="fa-solid fa-gear" aria-hidden="true"></i>
+                Units
+                <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+            </button>
+
+            <!-- Units Dropdown -->
+            <ul id="units-menu" class="hidden" role="menu">
+
+                <li role="none">
+                    <p class="menu-description">Switch measurement units</p>
+                </li>
+
+                <!-- Temperature -->
+                <li role="none">
+                    <h2 class="head-unit">Temperature</h2>
+
+                    <!-- Using button instead of div -->
+                    <button class="btn active" data-unit="celsius" role="menuitemradio" aria-checked="true">
+                        Celsius (°C)
+                        <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    </button>
+
+                    <button class="btn" data-unit="fahrenheit" role="menuitemradio" aria-checked="false">
+                        Fahrenheit (°F)
+                    </button>
+                </li>
+
+                <!-- Wind Speed -->
+                <li role="none">
+                    <h2 class="head-unit">Wind Speed</h2>
+
+                    <button class="btn active" data-unit="km" role="menuitemradio" aria-checked="true">
+                        km/h
+                        <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    </button>
+
+                    <button class="btn" data-unit="mph" role="menuitemradio" aria-checked="false">
+                        mph
+                    </button>
+                </li>
+
+                <!-- Precipitation -->
+                <li role="none">
+                    <h2 class="head-unit">Precipitation</h2>
+
+                    <button class="btn active" data-unit="millimeters" role="menuitemradio" aria-checked="true">
+                        Millimeters (mm)
+                        <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    </button>
+
+                    <button class="btn" data-unit="inch" role="menuitemradio" aria-checked="false">
+                        Inch (in)
+                    </button>
+                </li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="container">
+        <h1 class="hero">
+            How's the sky looking today?
+        </h1>
+    </section>
+
+    <!-- ================= SEARCH FORM ================= -->
+    <section class="container">
+
+        <!-- Added aria-label + proper labeling -->
+        <form role="search" aria-label="Search for weather by city">
+
+            <!-- Search Icon (hidden from screen readers) -->
+            <!-- Hidden label for screen readers -->
+            <label for="city-name" class="visually-visiable"><i class="fa-solid fa-search"
+                    aria-hidden="true"></i></label>
+
+            <!-- Input Field -->
+            <input type="text" id="city-name" name="city" placeholder="Search for a place..." required
+                autocomplete="off" aria-describedby="error-message">
+
+            <!-- Error Message -->
+            <span id="error-message" class="error" aria-live="polite"></span>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Search">
+        </form>
+        </div>
+
+        <!-- Main JavaScript File -->
+        <script src="JS/main.js"></script>
+</body>
+
+</html>
